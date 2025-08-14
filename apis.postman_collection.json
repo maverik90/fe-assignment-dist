@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "9140f101-ea09-4dd5-a232-ee95de5faf3e",
+		"name": "apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9912451"
+	},
+	"item": [
+		{
+			"name": "get all policies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/api/v1/policies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"policies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policy lookup",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/api/v1/policies?q=TL-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"policies"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "TL-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all claims",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/api/v1/claims",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"claims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create claim",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": \"290.00\",\n    \"holder\": \"Toby Wolff\",\n    \"policyNumber\": \"TL-12330\",\n    \"insuredName\": \"iPhone 13 Pro Max\",\n    \"description\": \"Cracked screen\",\n    \"processingFee\": \"100.00\",\n    \"incidentDate\": \"2022-09-12\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8001/api/v1/claims",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"v1",
+						"claims"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

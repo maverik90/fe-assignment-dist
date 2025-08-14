@@ -1,0 +1,18 @@
+ul.actionbar {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  margin-right: 0;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
