@@ -1,5 +1,5 @@
 # tigerlab FE Engineer Assignment 
-Author: Muzammil Mirza
+Developer: Muzammil Mirza
 
 This assignment is to be done as part of the recruitment process in tigerlab. You are tasked to build a simple react application that fulfills this requirement below.
 
